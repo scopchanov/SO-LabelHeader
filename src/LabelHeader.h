@@ -25,7 +25,6 @@ protected:
 
 private:
 	PatternType m_pattern;
-	PatternType m_pattesrn;
 };
 
 #endif // LABELHEADER_H
