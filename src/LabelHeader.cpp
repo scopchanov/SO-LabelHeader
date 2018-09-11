@@ -1,8 +1,14 @@
 #include "LabelHeader.h"
 #include <QPainter>
 
-LabelHeader::LabelHeader(QWidget *parent) :
-	QLabel(parent)
+LabelHeader::LabelHeader(QWidget *parent, Qt::WindowFlags f) :
+	QLabel(parent, f)
+{
+
+}
+
+LabelHeader::LabelHeader(const QString &text, QWidget *parent, Qt::WindowFlags f) :
+	QLabel(text, parent, f)
 {
 
 }

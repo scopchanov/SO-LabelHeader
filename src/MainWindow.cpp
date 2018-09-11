@@ -4,9 +4,8 @@
 MainWindow::MainWindow(QWidget *parent) :
 	QMainWindow(parent)
 {
-	auto *label = new LabelHeader(this);
+	auto *label = new LabelHeader(tr("General"), this);
 
-	label->setText(tr("General"));
 	label->setStyleSheet("QLabel { color: #C8C8C8; }");
 
 	setCentralWidget(label);
