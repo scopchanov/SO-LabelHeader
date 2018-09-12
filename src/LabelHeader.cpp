@@ -21,6 +21,9 @@ LabelHeader::PatternType LabelHeader::pattern() const
 
 void LabelHeader::setPattern(const PatternType &pattern)
 {
+	if (m_pattern == pattern)
+		return;
+
 	m_pattern = pattern;
 	update();
 }
